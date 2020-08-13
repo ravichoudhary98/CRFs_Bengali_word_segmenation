@@ -1,0 +1,18 @@
+#This is meta file contain information that how we prepare train and validation data and where from.
+
+#A data taken from fire dataset 'http://fire.irsi.res.in/fire/static/data'
+
+####In 'data' folder in 'bengali_train.txt' file we take '/home/ravi/Downloads/bn.docs.2012.19032012/bn_ABP/2002/' folder for prepare 'bengali_train.txt' file in this folder we take 100 files from each sub folder if sub folder have more then 100 files then we only take 100 files if folder have less then 100 files then we take all files from this sub folder and if sub folder don't have files we move to next sub folder        (totel files included 3839).
+
+
+
+####In 'data' folder in 'bengali_validation.txt' file we take '/home/ravi/Downloads/bn.docs.2012.19032012/bn_ABP/2001/' folder for prepare 'bengali_validation.txt' file in this folder we take 10 files from each sub folder if sub folder have more then 10 files then we only take 10 files if folder have less then 10 files then we take all files from this sub folder and if sub folder don't have files we move to next sub folder         (totel files included 451) .
+
+
+####In 'output.txt' file we have segmented text of 'bengali_validation.txt' file saved in 'data' folder.
+####our model saved as 'bengali-text-segmentation.crfsuite'
+
+#Model saved in 'model' folder
+#This model applyed on the bases of paper 'Conditional Random Field Latin Word Segmenter Dylan Rhodes (dylanr) December 8, 2013' and blog 'https://medium.com/@felixmohr/using-python-and-conditional-random-fields-for-latin-word-segmentation-416ca7a9e513'
+
+
